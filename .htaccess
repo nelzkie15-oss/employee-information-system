@@ -8,7 +8,7 @@
     # Handle Frontend React Routes
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^ /https://employee-information-system.mywebapp.online/index.html [L]
+    RewriteRule ^ /employee-information-system/index.html [L]
 
     # Handle Backend Laravel Routes
     RewriteCond %{REQUEST_FILENAME} !-f
