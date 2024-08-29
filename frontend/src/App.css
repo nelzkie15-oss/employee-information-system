@@ -1,0 +1,89 @@
+/* Please note this document will be updated as time goes by. Thank you */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+@layer components {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"], textarea {
+        @apply block w-full p-2 bg-white border-0 rounded-md shadow-sm text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-500 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm;
+    }
+    label {
+        @apply block text-sm font-medium leading-6 text-slate-900 first-letter:capitalize;
+    }
+    header {
+        @apply shadow-md bg-slate-900;
+    }
+    nav {
+        @apply flex justify-between w-full p-5 md:mx-auto;
+    }
+
+    main {
+        @apply max-w-screen-lg mx-auto;
+    }
+    .primary-btn {
+        @apply flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-slate-400 disabled:cursor-wait;
+    }
+    .text-link {
+        @apply font-semibold text-blue-500 hover:text-blue-600;
+    }
+    .nav-link {
+        @apply px-3 py-2 text-sm font-medium rounded-md text-slate-200 hover:bg-slate-700 hover:text-white;
+    }
+    .title {
+        @apply my-6 text-3xl font-bold leading-9 text-center text-slate-900;
+    }
+    .error {
+        @apply mt-1 text-xs text-red-500;
+    }
+    table {
+        @apply w-full mb-6 overflow-hidden text-sm text-left bg-white rounded-md shadow-lg table-auto;
+    }
+    thead {
+        @apply text-xs font-medium uppercase border-b border-slate-100 text-slate-600;
+    }
+    tbody tr {
+        @apply w-full p-0 hover:bg-slate-100;
+    }
+    th {
+        @apply px-6 py-4;
+    }
+    td {
+        @apply px-6 py-4 border-b border-slate-100;
+    }
+    .avatar {
+        @apply object-cover object-center w-8 h-8 overflow-hidden rounded-full;
+    }
+}
+
+/* .loading-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #000;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
+
+.loading-icon {
+white-space: nowrap;
+}
